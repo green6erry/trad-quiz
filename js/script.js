@@ -10,7 +10,7 @@ verb or solo letter first = function
 
 //hide all questions
 
-(document).ready(function() {
+$(document).ready(function() {
 
 var aGuess = ""; //pull from user guess input 
 var Question = {};
