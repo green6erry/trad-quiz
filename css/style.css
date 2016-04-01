@@ -1,0 +1,39 @@
+body {
+	background-color: purple;
+	font-family: 'Josefin Sans', sans-serif;
+	color:coral;
+}
+
+div {
+	padding: .5em;
+	background-color: green;
+	color: black;
+}
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pseudo-button {
+	width: 5em;
+	background-color: aliceblue;
+	text-decoration: none;
+	padding: 1em;
+}
+
+li {
+	padding:1em;
+	outline: yellow solid 1px;
+	margin: .3em;
+	background-color: coral;
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: flex;
+}
