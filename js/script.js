@@ -91,7 +91,7 @@ $('#next').click(function(){
 
 function qPrevious() {
 	//show previous question
-}
+} 
 
 $( ".sortable" ).sortable();
 $( ".selectable" ).selectable();
