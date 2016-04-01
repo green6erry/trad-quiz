@@ -2,6 +2,7 @@ body {
 	background-color: purple;
 	font-family: 'Josefin Sans', sans-serif;
 	color:coral;
+	overflow: auto;
 }
 
 div {
@@ -23,11 +24,16 @@ div {
 	padding: 1em;
 }
 
+#startQuiz{
+	margin-bottom: 2em;
+}
+
 li {
 	padding:1em;
 	outline: yellow solid 1px;
 	margin: .3em;
 	background-color: coral;
+	list-style-type: none;
 }
 
 .hidden {
@@ -35,5 +41,23 @@ li {
 }
 
 .visible {
-	display: flex;
-} 
+	display: inherit;
+	max-width: 50em;
+	overflow: auto;
+}
+
+.submit {
+	/*display: inline;*/
+}
+
+#pageControls {
+	position: fixed;
+    right: 0px;
+    z-index: 999999;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+ button {
+ 	cursor: pointer;
+ }
