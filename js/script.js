@@ -18,6 +18,7 @@ var score = 0;
 var aFullCount = 0;
 var aPartCount = 0;
 var aOptions = [];
+var qList = [];
 
 var commands1 = Object.create(Question);
 
@@ -30,9 +31,14 @@ commands1.aAlt1Explain = 'This is not bad, but it\'s also not accurate unless yo
 commands1.aWrongExplain = 'The correct answer was \"Hold, Joe!\", because that means you are in the process of doing the command they asked. Another acceptable answer would\'ve been \"Off belay, Joe!\", because is the clearest way to respond. ';
 
 
+
+
 function updateDOM(){
 //what I want
-$('.visible').find('h2').html(commands1.qprompt);
+
+
+
+	$('#prompt').find('h2').html(commands1.qprompt);
 }
 
 
@@ -69,7 +75,7 @@ function aFeedback (){
 
 //$('#prompt').html('<h3>'+q.commnds1.qprompt+'</h3>');
 
-//in lieu of creating seperate function to start quiz...
+
 $('.submit').click(function() {
 	qNext();
 	updateDOM();
@@ -83,7 +89,7 @@ $('#back').click(function(){
 	$('div.visible').prev('div').switchClass('hidden', 'visible', 500);
 });
 
-
+//to walk through the logic
 function qNext() {
 	$('div.visible').switchClass('visible', 'hidden', 100);
 	$('div.visible').next('div').switchClass('hidden', 'visible', 500);
