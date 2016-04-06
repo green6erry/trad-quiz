@@ -32,7 +32,6 @@ commands1.aWrongExplain = 'The correct answer was \"Hold, Joe!\", because that m
 
 
 
-
 function updateDOM(){
 //what I want
 
