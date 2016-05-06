@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Trad Quiz</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta charset="UTF-8">
+	<title>Trad Quiz: Let's Get Real Safe!</title>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.css">
+	 <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.structure.css">
+	 <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.theme.css">
+	
+		<script src="http://code.jquery.com/jquery-2.2.1.js"></script>
 
-  <script src="http://code.jquery.com/jquery-2.2.1.js">
-  </script>
-  <script type="text/javascript" src="js/script.js">
-  </script>
-  <script src="js/jquery-ui.min.js">
-  </script>
+	 <script type="text/javascript" src="js/app2.js"></script>
 
-</head>
-
+	  <script src="js/jquery-ui.min.js">
+	  </script>
+	  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	  </head>
 <body>
 
+<header><h1 class='reset'><span class='yay hidden'>&#161;</span>Trad Quiz<span class='yay hidden'>!</span></h1></header>
 
-  <nav><a href="#" id="clearSelection" class="pseudo-button">Clear Selection</a></nav>
-  <header>
-    <h1 class="center">Trad Quiz</h1>
-  </header>
+<div class='full-width'>
+<section id='intro'>
+	<h2>Welcome!</h2>
+	<h4>Today we shall learn to be super safe so that we don't accidentally put an end to the lives of ourselves or the good climbing and non-climbing people around us. All questions have a correct answer except one.</h4>
+	<button class='start' title='(spacebar)'>Start!</button>
+	</section>
+
+<section id="quiz">
+	<h3 id='quizProgress'>Question 
+	<span id='currentQuestion'></span> out of 
+	<span class='totalQuestions'></span>
+	</h3>
+	<div id="prompt"></div>
+
+	<br>
+
+	<div id="options"></div>
+
+	<br>
 
 
+	<nav>
+		<button id='previous' title='(left arrow)'><</button>
+		<button class='next' title='(enter)'>Feedback!</button>
+		
+		<button class='nextQuestion' type='submit' title='(right arrow)'>>
+		</button><br>
+		
+	</nav>
 
-  <div id="quizIntro" class='visible center'>
-	    <h3>While you can minimize the risks of trad climbing a great deal with good habits, it can also get really dangerous really fast. Take the quiz below to gauge how up to date on some certain life-saving aspects.</h3>
+	<br>
+	
 
-	    <input type="checkbox" required>I don't want myself or the other good people around me to die over something stupid.</input>
-	    <br><br><br><br>
+	</section>
+<section name='feedback'id="modal">
+	<div class="overlay"><div class='inner'
+		<span id="feedback"></span>
+	</div>
+	<button class='next' type='submit' title='(right arrow)'>Next Question ></button>
+	</div>
+</section>
 
-	    <a href="#" id="startQuiz" class="submit pseudo-button center">Start Now!</a>
+<section id='results'>
+
+	<h3>Nice Work!</h3>
+	<h2>You got <span class='score'></span> out of <span class='totalQuestions'></span> correct!</h2>
+	<h4></h4>
+	<button class='reset' class='start' title='"R"'>Do it Again!</button>
+	</section>
 </div>
- 
+<footer></footer>
 
- 
-
-  <div id="prompt" class="hidden center">
-
-
-<nav id='pageControls'>
-  <button id="back">Back</button>
-  <button id="next">Next</button>
-  </nav>
-
-
-  <div class="hidden">
-
-  </div>
 </body>
-
 </html>
